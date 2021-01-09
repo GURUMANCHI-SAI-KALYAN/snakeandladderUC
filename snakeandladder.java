@@ -2,7 +2,7 @@
 public class snakeandladder {
 
 	public static void main(String[] args) {
-
-	System.out.println("welcome");
+	int position = 0;
+	System.out.println("player position:" + position);
       }
 }
