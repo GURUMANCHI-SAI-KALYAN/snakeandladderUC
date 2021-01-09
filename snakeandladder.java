@@ -2,7 +2,23 @@
 public class snakeandladder {
 
 	public static void main(String[] args) {
-	double NUMBER = Math.floor(Math.random() * 10) % 5 + 1;
-	System.out.println("DICE NUMBER:" + NUMBER);
+	int position = 10;
+	int LADDER_GAME = 0;
+        int SNAKE_GAME = 1;
+        int NOCHANCE_GAME = 2;
+
+	int option_player = (int) Math.floor(Math.random() * 10) % 2;
+
+	int DIE_NUMBER = (int) Math.floor(Math.random() * 10) % 5 + 1;
+	if (option_player == LADDER_GAME)
+		position += DIE_NUMBER;
+
+	else if (option_player == SNAKE_GAME)
+		  position -= DIE_NUMBER;
+
+	else if (option_player == NOCHANCE_GAME)
+		position = position;
+
+	System.out.println("player position:" + position);
       }
 }
