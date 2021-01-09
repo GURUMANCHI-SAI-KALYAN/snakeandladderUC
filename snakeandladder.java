@@ -2,7 +2,7 @@
 public class snakeandladder {
 
 	public static void main(String[] args) {
-	int position = 0;
-	System.out.println("player position:" + position);
+	double NUMBER = Math.floor(Math.random() * 10) % 5 + 1;
+	System.out.println("DICE NUMBER:" + NUMBER);
       }
 }
