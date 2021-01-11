@@ -7,9 +7,9 @@ public class snakeandladder {
         int SNAKE_GAME = 1;
         int NOCHANCE_GAME = 2;
 
-	int DIE_NUMBER = (int) Math.floor(Math.random() * 10) % 5 + 1;
 	while(position != 100) {
 	 int option_player = (int) Math.floor(Math.random() * 10) % 3;
+	 int DIE_NUMBER = (int) Math.floor(Math.random() * 10) % 5 + 1;
 
 	if (option_player == LADDER_GAME) 
 		position += DIE_NUMBER;
